@@ -1,0 +1,12 @@
+<html>
+	<head></head>
+	<body>
+		<script>
+			var dest = "https://app.picpay.com/openbanking/authorize?"
+			console.log(window.location.search);
+			var urlSearchParams = new URLSearchParams(window.location.search.substr(5).replace(/&amp;/g, '&'));
+			urlParams = escape(urlSearchParams.toString())
+			window.location.replace(dest+urlParams);
+		</script>
+	</body>
+</html>
