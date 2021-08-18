@@ -6,7 +6,8 @@
 			console.log(window.location.search);
 			var urlSearchParams = new URLSearchParams(window.location.search.substr(5).replace(/&amp;/g, '&'));
 			urlParams = escape(urlSearchParams.toString())
-			window.location.replace(dest+urlParams);
+			//window.location.replace(dest+urlParams);
+			alert(dest+urlParams);
 		</script>
 	</body>
 </html>
